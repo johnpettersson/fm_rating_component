@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/johnpettersson/fm_rating_component)
-- Live Site URL: [Add live site URL here](https://johnpettersson.github.io/fm_rating_component/)
+- Solution URL: [https://github.com/johnpettersson/fm_rating_component](https://github.com/johnpettersson/fm_rating_component)
+- Live Site URL: [https://johnpettersson.github.io/fm_rating_component/](https://johnpettersson.github.io/fm_rating_component/)
 
 ### Built with
 
