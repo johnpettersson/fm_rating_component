@@ -19,7 +19,7 @@
   <h1 class="sr-only">Interactive rating component, challenge from frontendmentor</h1>
   
   <section class="card" id="card1">
-    <img src="images/icon-star.svg" alt="star icon">
+    <img src="images/icon-star.svg" aria-hidden="true">
     <h1>How did we do?</h1>
     
     <p>
@@ -27,20 +27,40 @@
       to help us improve our offering!
     </p>
 
-    <div class="ratings">
-      <button>1</button>
-      <button>2</button>
-      <button>3</button>
-      <button>4</button>
-      <button>5</button>
-    </div>
-
-    <button class="submit" id="submit">SUBMIT</button>
+    <form id="ratingform">
+      <fieldset>
+        <div class="ratings">
+          <div class="radio">
+            <input type="radio" name="rating" id="rating1" value="1">
+            <label for="rating1">1</label>
+          </div>
+          <div class="radio">
+            <input type="radio" name="rating" id="rating2" value="2">
+            <label for="rating2">2</label>
+          </div>
+          <div class="radio">
+            <input type="radio" name="rating" id="rating3" value="3">
+            <label for="rating3">3</label>
+          </div>
+          <div class="radio">
+            <input type="radio" name="rating" id="rating4" value="4">
+            <label for="rating4">4</label>
+          </div>
+          <div class="radio">
+            <input type="radio" name="rating" id="rating5" value="5">
+            <label for="rating5">5</label>
+          </div>
+        </div>
+      </fieldset>
+        
+    
+        <button class="submit" id="submit">SUBMIT</button>
+    </form>
   </section>
 
 
   <section class="card t-center d-none" id="card2">
-    <img src="images/illustration-thank-you.svg" alt="Illustration of a checkoutmachine" srcset="">
+    <img src="images/illustration-thank-you.svg" aria-hidden="true">
     
     <p>
       <span class="info">You selected <span id="ratingspan">X</span> out of 5</span>

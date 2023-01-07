@@ -8,26 +8,20 @@ const ratingspan = document.getElementById("ratingspan");
 const submitbutton = document.getElementById("submit");
 submitbutton.addEventListener("click", handleSubmit);
 
-document.querySelector(".ratings").childNodes.forEach(button => {
-    button.addEventListener("click", selectRating);
-})
+const form = document.getElementById("ratingform");
 
-function selectRating(e) {
-    if (selectedRating)
-        selectedRating.classList.remove("active");
-    
-
-    selectedRating = e.target;
-    selectedRating.classList.add("active");
-}
+form.addEventListener("submit", handleSubmit);
 
 function handleSubmit(e) {
-    if (!selectedRating) {
-        return;
+    e.preventDefault();
+    let formData = new FormData(form);
+
+    let rating = formData.get("rating")
+    
+    if (rating) {
+        ratingspan.textContent = rating;
+    
+        card1.classList.add("d-none");
+        card2.classList.remove("d-none");
     }
-    
-    ratingspan.textContent = selectedRating.textContent;
-    
-    card1.classList.add("d-none");
-    card2.classList.remove("d-none");
 }

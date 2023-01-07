@@ -84,14 +84,15 @@ div.ratings button {
     text-align: center;
 }
 
-div.ratings button.active,
-div.ratings button.active:hover {
-    background-color: var(--primary);
-}
 
-div.ratings button:hover,
+
 button.submit:hover {
     background-color: var(--medium-grey);
+}
+
+button.submit:active {
+    background-color: #FFF;
+    color: var(--primary);
 }
 
 button.submit {
@@ -103,12 +104,6 @@ button.submit {
     padding: 12px;
     margin: 1em 0;
 }
-button.submit:active {
-    background-color: #FFF;
-    color: var(--primary);
-}
-
-
 
 span.info {
     background-color: var(--light-blue);
@@ -127,3 +122,28 @@ span.info {
 }
 
 
+fieldset {
+    border: none;
+}
+
+div.radio label{
+    background-color: var(--light-blue);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.radio input {
+    display: none;
+}
+
+div.radio input:checked + label {
+    background-color: var(--primary);
+}
+
+div.radio label:hover {
+    background-color: var(--medium-grey);
+}
