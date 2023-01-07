@@ -1,0 +1,129 @@
+:root {
+    --dark-blue: hsl(213, 19%, 18%);
+    --darker-blue: hsl(216, 12%, 8%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    
+    --light-blue: hsl(212, 13%, 26%);
+
+    --primary: hsl(25, 97%, 53%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+}
+
+html, body, main {
+    height: 100vh;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    color: #FFF;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--darker-blue);
+}
+
+.card {
+    width: 350px;
+    background-color: var(--dark-blue);
+    padding: 25px;
+    border-radius: 25px;
+}
+
+
+.d-none {
+    display: none;
+}
+.t-center {
+    text-align: center;
+}
+
+.card h1, .card p {
+    margin: 1rem 0;
+}
+
+.card p {
+    color: var(--light-grey);
+}
+
+button {
+    all: unset;
+    box-sizing: border-box;
+}
+
+
+div.ratings {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.ratings button {
+    background-color: var(--light-blue);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+div.ratings button.active,
+div.ratings button.active:hover {
+    background-color: var(--primary);
+}
+
+div.ratings button:hover,
+button.submit:hover {
+    background-color: var(--medium-grey);
+}
+
+button.submit {
+    width: 100%;
+    color:#FFF;
+    background-color: var(--primary);
+    text-align: center;
+    border-radius: 25px;
+    padding: 12px;
+    margin: 1em 0;
+}
+button.submit:active {
+    background-color: #FFF;
+    color: var(--primary);
+}
+
+
+
+span.info {
+    background-color: var(--light-blue);
+    color: var(--primary);
+    border-radius: 15px;
+    padding: 5px 15px;
+}
+
+
+#card1 img {
+    padding: 14px;
+    width: 45px;
+    height: 45px;
+    background: var(--light-blue);
+    border-radius: 50%
+}
+
+
